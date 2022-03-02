@@ -48,6 +48,30 @@
             width: 100%;
             background-color:  black;
         }
+        .menu li{
+            float: left;
+            list-style: none;
+            line-height: 50px;
+            width: 100px;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+        .menu> li:hover{
+            background-color: aqua;
+        }
+        .wrapper .menu .menunho{
+            display: none;
+            position: absolute;
+            background-color: aqua;
+        }
+        .menu li:hover .menunho{
+            display: block;
+        }
+        .wrapper .menu .menunho li:hover{
+            background-color: yellow;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -57,7 +81,17 @@
             HỆ THỐNG VÀ CÔNG NGHỆ WEB
         </header>
         <nav>
-            
+            <ul class="menu">
+                <li><a href="">Trang chu</a></li>
+                <li><a href="">Phim</a></li>
+                <li><a href="">Bao</a></li>
+                <li><a href="">Nhieu hon</a>
+                    <ul class="menunho"> 
+                        <li>Hoat hinh</li>
+                        <li>Phim dai tap </li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
         <div class="content1">
             <aside>
